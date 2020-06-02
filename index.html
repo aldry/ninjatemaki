@@ -1,12 +1,206 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
+	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Ninja temaki</title>
+
+    <link rel="apple-touch-icon" href="apple-icon-57x57.png">
+	<link rel="icon" href="favicon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+	<!--[if IE]>
+		<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
+	<![endif]-->
+
+	<style type="text/css">
+		@font-face {
+		    font-family:'calling_coderegular';
+		    src: url('font/callingcode-regular-webfont.woff2') format('woff2'),
+		         url('font/callingcode-regular-webfont.woff') format('woff');
+		    font-weight: normal;
+		    font-style: normal;
+		}
+		*{
+		  margin: 0;
+		  padding: 0;
+		}
+		html {
+		  height:100%;
+		  font-size: 100%;
+		}
+		body{
+		  color:#fff;
+		  font-family:'calling_coderegular';
+		  font-size: 18px;
+		  font-weight: 100;
+		  background: #1a1a1a;
+		  line-height:36px;
+		}
+		header{
+			background:#c2272d;
+			text-align: center;
+			padding:10px 0 20px 0; 
+			position: relative;
+		}
+		h2{
+			color:#fff;
+			font-family:'calling_coderegular';
+			font-size:28px;
+			line-height: 38px;
+			text-transform: uppercase;
+			background: #c2272d;
+			padding:0px 5px;
+			display:inline-block;
+		}
+		.top{
+			/*position: absolute;
+			right:50px;
+			top: 0;
+			z-index: 1;*/
+			float: right;
+		}
+		.top .social a{
+			display: inline-block;
+			margin-right: 10px;
+		}
+		.top .social{
+			text-align: right;
+		}
+		a.bt-cadastra{
+			font-family:'calling_coderegular';
+			text-decoration:none;
+			padding:8px 15px;
+			font-size: 16px;
+			background:#fff;
+			border:1px solid #fff;
+			color:#101516;
+			z-index: 1;
+			cursor: pointer;
+			transition: all 1s ease;
+		}
+		a.bt-cadastra:hover{
+			background:transparent;
+			color: #fff;
+		}
+		a.bt-cardapio{
+			font-family:'calling_coderegular';
+			text-decoration:none;
+			padding:8px 15px;
+			font-size: 16px;
+			background:transparent;
+			border:1px solid #fff;
+			color:#fff;
+			z-index: 1;
+			cursor: pointer;
+			transition: all 1s ease;
+		}
+		article.bts a{
+			display: inline-block;
+			text-transform: uppercase;
+		}
+		a.bt-cardapio:hover{
+			background:#fff;
+			color:#1a1a1a;
+		}
+		a{
+			color:#fff;
+			text-decoration:none;
+			font-size: 18px;
+			line-height:36px;
+			display: block;
+		}
+
+		section{
+			text-align: center;
+			padding: 50px 0;
+		}
+		article{
+			padding:25px 0;
+		}
+		article.apps a{
+			display: inline-block;
+		    margin-top: 25px;
+		    margin-left: 15px;
+		}
+		footer{
+			background:#c2272d;
+			text-align: center;
+			padding:20px 0; 
+			position: relative;
+		}
+		footer a{
+			display: inline-block;
+			margin: 0 10px; 
+		}
+		footer a i{
+			font-size: 25px
+		}
+	</style>
+
+	<title>Ninja Temaki</title>
 </head>
 <body>
-    <h1>Ninja Temaki</h1>
+	<header>
+		<div class="top">
+			<div class="social">
+				<a target="_blank" href=""><i class="fab fa-facebook-f"></i></a>
+				<a target="_blank" href=""><i class="fab fa-instagram"></i></a>
+			</div>
+		</div>
+		<h1><img src="img/NinjaTemaki_horizontal_branco.png"></h1>
+	</header>
+
+	<section>
+		<article>
+			<h2>Restaurante</h2>
+			<p><i class="fas fa-map-marker-alt"></i> Av. Venâncio Aires, 1121 - Bom Fim - Porto Alegre / RS</p>
+			<a href="tel:5132090280"><i class="fas fa-phone"></i> (51) 3209 0280</a>
+			<a href="mailto:falecom@ninjatemaki.com.br"><i class="far fa-envelope"></i> falecom@ninjatemaki.com.br</a>
+			<p><i class="far fa-clock"></i> 11:30h às 15h | 17h às 20h</p>
+		</article>
+
+		<article>
+			<h2>Pedidos para retirada no local</h2>
+			<a href="http://api.whatsapp.com/send?1=pt_BR&amp;phone=5551999172293"><i class="fab fa-whatsapp"></i> (51) 99917 2293</a>
+		</article>
+
+		<article class="apps">
+			<h2>Pedidos exclusivamente</h2><br>
+			<a target="_blank" href="https://www.ifood.com.br/delivery/porto-alegre-rs/ninja-temaki-bom-fim/"><img src="img/ifood-logo.png"></a>
+			<a target="_blank" href="https://www.rappi.com.br/"><img src="img/rappi.png"></a>
+			<a target="_blank" href="https://www.ubereats.com/br/porto-alegre/food-delivery/ninja-temaki/"><img src="img/uber-eats.png"></a>
+		</article>
+
+		<article class="bts">
+			<a class="bt-cadastra" target="_blank" href="https://docs.google.com/forms/d/14hypsU3pRxQATZNwF-I-_AEydMCE-VnOzjtYZYZ00gU/edit">CADASTRA-SE</a>
+			<a class="bt-cardapio" target="_blank" href="https://ninjatemaki.com.br/#/store/tabs/t0/restaurante/cardapio/">Cardápio Online</a>
+		</article>
+	</section>
+
+	<footer>
+		<a target="_blank" href=""><i class="fab fa-facebook-f"></i></a>
+		<a target="_blank" href=""><i class="fab fa-instagram"></i></a>
+	</footer>
+	
+
+
 </body>
 </html>
